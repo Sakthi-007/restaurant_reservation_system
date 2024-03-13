@@ -1,14 +1,15 @@
 import React from "react";
 import { useState } from "react";
-
+import axios from 'axios'
 function Contact_form(props){
 
     const[name, setName] = useState("");
     const [email, setEmail] =useState("");
     const [number,setNumber] =useState("");
-    
+    const { filterobj, sendconfirmation } = props;
+    const { date, time, location, quantity, tableno } = filterobj;
 
-    const sendconfirmation=props.sendconfirmation 
+    // const sendconfirmation=props.sendconfirmation 
 
         function handleNamechange(e){
             setName(e.target.value);
@@ -20,18 +21,23 @@ function Contact_form(props){
             setNumber(e.target.value);
         }
 
-        function handleSubmit(e){
+       async function handleSubmit(e){
             e.preventDefault();
             
             //handle form submision here
 
             alert(`Name: ${name} \n Email:${email}\n Number:${number}`);
             sendconfirmation(name, email, number);
+            var dbobj = { name: name, email: email, number: number, date: date, time: time, location: location, tableno: tableno, person: quantity };
+             var res = await axios.post("http://localhost:5500/contact", dbobj);
+           
+            // var dbobj={name:name,email:email,number:number}
+            //  var res=await axios.post("http://localhost:5500/contact",dbobj)
 
         }
     return(<>
-    <h2>Contact Form</h2>
     <form onSubmit={handleSubmit} className="contact-form">
+    <h2>Contact Form</h2>
         <div>
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" value={name} onChange={handleNamechange} required/>

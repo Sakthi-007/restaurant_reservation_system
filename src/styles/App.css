@@ -1,0 +1,108 @@
+.reserve-form{
+    
+    margin-top: 3vh;
+    padding-top: 3vh;
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.reserve-form label{
+    text-align: center;
+    margin: auto 10px;
+}
+
+.reserve-form input{
+    /* background:green; */
+    width: 150px;
+    padding: 1.5vh 1.5vw;
+   
+}
+
+.reserve-form select{
+    /* background:green; */
+    width: 150px;
+    letter-spacing: 0.02rem;
+    padding: 2vh 2vw;
+   
+}
+
+.reserve-form button{
+    position: absolute;
+    top: 29vh;
+    left:45vw
+    
+}
+
+.contact-form{
+    /* background-color: blue; */
+    margin-top: 5vh;
+    margin-left: 1vw;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5vh;
+}
+
+.contact-form label{
+    /* text-align: center; */
+    margin: auto 20px;
+}
+
+.contact-form input{
+    display: block;
+    width: 30vw;
+    padding:2vh 2vw ;
+}
+
+.Confirmation{
+    margin-top: 10vh;
+    font-size: 2rem;
+    font-weight:700;
+    text-align: center;
+}
+
+p.Confirmation{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+img.Confirmation{
+    display: block;
+    position: relative;
+    left: calc( 47.5vw - 2.5vmin);
+    height: 15vmin;
+    width:15vmin
+}
+.home-para{
+    margin-top: 7vh;
+    margin-bottom: 1vh;
+    font-size: 2rem;
+    font-weight:700;
+    text-align: center;
+}
+.home-btn{
+    display: inline-block;
+    position: relative;
+    padding: 2vh 2.5vw;
+    left: 44vw;
+    border-radius: 40px;
+    margin: 5vh auto;
+}
+.name{
+    color: #5c1d0c;
+    font-size: 1.4rem;
+    font-weight:700;
+    letter-spacing: -0.05rem;
+    margin-top: 3vh;
+    margin-left: 4vw;
+}
+.home-img{
+    display: block;
+    position: relative;
+    left:35vw ;
+    height:50vh;
+    width: 30vw;
+    border-radius: 25px;
+}

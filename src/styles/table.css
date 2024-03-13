@@ -1,0 +1,30 @@
+.table-select-btn{
+    padding: 10px 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: brown;
+  border-radius: 10px;
+  border: none;
+}
+.table{
+    display: flex;
+    color: #7d280b;
+    background: #faf1e4;
+    font-size: 1.3rem;
+    font-weight: 600;
+    align-items:baseline;
+    justify-content: space-evenly;
+    gap: 10vw;
+    margin: auto 3vmax;
+    padding: 4vh 10vw;
+    border-radius: 20px;
+}
+.table-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    align-items:center;
+    gap: 2vmax;
+    padding-top: 5vh;
+}

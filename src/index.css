@@ -1,11 +1,13 @@
 *{
 margin: 0;
 padding: 0;
+overflow-x: hidden;
 }
 body {
   font-family: Arial, sans-serif;
+  /* text-align: center; */
   line-height: normal;
-  background-color: bisque;
+  background-color: #f6e4ca;
 }
 
 button{
@@ -19,10 +21,24 @@ button{
 }
 
 form{
-  margin-top: 10vh;
+  font-size: large;
+  font-weight: bold;
   margin-bottom: 10vh;
   margin-left: 3vw;
   margin-right: 2vw;
   padding: 10vh;
   width: 90vw;
+}
+
+input,select{
+  border:3px double whitesmoke;
+  outline: none;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+h2{
+  color: brown;
+  text-align: center;
+  letter-spacing: -0.05rem;
 }
