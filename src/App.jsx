@@ -19,6 +19,7 @@ function App() {
 //     setIsList(1)
 
 //   }
+var [tableno,setTableno ] = useState(0)
   var [selectedQuantity, setSelectedQuantity] = useState(0);
   var [contact_array, setContact_array] = useState([])
 
@@ -29,6 +30,7 @@ function App() {
 
   function contactform(args) {
     console.log(args);
+    setTableno(args)
     setPage(2)
   }
 
@@ -72,7 +74,7 @@ function App() {
         ))}
       </div> : null}
       
-      {page === 2 ? <Contact_form sendconfirmation={contactFN} filterobj={filterObj} /> : null}
+      {page === 2 ? <Contact_form sendconfirmation={contactFN} tableno={tableno} filterobj={filterObj} /> : null}
       {page === 3 ? <Confirmation /> : null}
     </>
   )

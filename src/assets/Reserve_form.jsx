@@ -9,7 +9,7 @@ const Reserve_form = (props) => {
   const {setSelectedQuantity,showList}=props
   const today = new Date().toISOString().split('T')[0];
   const maxDate = new Date();
-  maxDate.setDate(maxDate.getDate() + 30);
+  maxDate.setDate(maxDate.getDate() + 7);
   const maxDateFormatted = maxDate.toISOString().split('T')[0];
 
   const handleDateChange = (e) => {

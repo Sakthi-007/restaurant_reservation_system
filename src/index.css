@@ -42,3 +42,15 @@ h2{
   text-align: center;
   letter-spacing: -0.05rem;
 }
+button:hover{
+  background-color: rgb(216, 22, 22);
+  box-shadow: #f6e4ca;
+  -webkit-box-shadow: 5px 4px 18px 0px rgba(92,78,78,1);
+  -moz-box-shadow: 5px 4px 18px 0px rgba(92,78,78,1);
+  box-shadow: 5px 4px 18px 0px rgba(92,78,78,1);
+}
+
+button:active{
+background-color: lightcoral;
+color: black;
+}

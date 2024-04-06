@@ -7,7 +7,8 @@ function Contact_form(props){
     const [email, setEmail] =useState("");
     const [number,setNumber] =useState("");
     const { filterobj, sendconfirmation } = props;
-    const { date, time, location, quantity, tableno } = filterobj;
+    const tableno = props.tableno;;
+    const { date, time, location, quantity} = filterobj;
 
     // const sendconfirmation=props.sendconfirmation 
 
